@@ -1,0 +1,11 @@
+type Query {
+	emails(id : Int) : EmailsResponse
+	emails : [EmailsResponse]
+}
+type EmailsResponse {
+	id : Int
+	firstName : String
+	lastName : String
+	email : String
+	fullName : String
+}
