@@ -1,10 +1,9 @@
 type Mutation {
-	createEmails(createEmailsRequest : CreateEmailsRequest) : EmailsResponse
-	deleteEmails(id : Int) : Boolean
+	createLogEmail(createLogEmailRequest : CreateLogEmailRequest) : LogEmailResponse
 }
 
-input CreateEmailsRequest {
-	firstName : String
-	lastName : String
+input CreateLogEmailRequest {
+	fullName : String
 	email : String
 }
+

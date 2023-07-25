@@ -1,11 +1,9 @@
 type Query {
-	emails(id : Int) : EmailsResponse
-	emails : [EmailsResponse]
+	logEmails : [LogEmailResponse]
 }
-type EmailsResponse {
+
+type LogEmailResponse {
 	id : Int
-	firstName : String
-	lastName : String
-	email : String
 	fullName : String
+	email : String
 }

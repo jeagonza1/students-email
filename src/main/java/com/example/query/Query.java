@@ -1,16 +1,13 @@
 package com.example.query;
 
-import com.example.entity.Emails;
+import com.example.entity.LogEmail;
+import com.example.response.LogEmailResponse;
+import com.example.service.LogEmailService;
+import graphql.kickstart.tools.GraphQLQueryResolver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-
-import com.example.response.EmailsResponse;
-import com.example.service.EmailsService;
-
-import graphql.kickstart.tools.GraphQLQueryResolver;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,12 +17,19 @@ import java.util.List;
 public class Query implements GraphQLQueryResolver {
 	
 	@Autowired
-	EmailsService emailsService;
+	LogEmailService logEmailService;
 
 	private final Logger LOG = LoggerFactory.getLogger(getClass());
 
-	public EmailsResponse getEmails (long id) {
-		LOG.info("Search Emails By id");
-		return new EmailsResponse(emailsService.getEmailsById(id));
+	public List<LogEmailResponse> getLogEmails () {
+		LOG.info("List all of LogEmail...");
+		List<LogEmail> logEmails = logEmailService.getLogEmails();
+		List<LogEmailResponse> respon = new ArrayList<>() ;
+
+		for(LogEmail logEmail:logEmails){
+			LogEmailResponse logEmailResponse = new LogEmailResponse(logEmail);
+			respon.add(logEmailResponse);
+		}
+		return respon;
 	}
 }
