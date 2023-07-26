@@ -1,0 +1,10 @@
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/service/LogEmailService.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/GraphQLWithSpringBootApplication.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/MailConfiguration.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/query/Query.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/repository/LogEmailRepository.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/MailSenderService.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/request/CreateLogEmailRequest.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/response/LogEmailResponse.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/entity/LogEmail.java
+/Users/danpascu1/Documents/studies/graphQl/graphql-api-email/src/main/java/com/example/mutation/Mutation.java

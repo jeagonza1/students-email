@@ -1,0 +1,11 @@
+com/example/query/Query.class
+com/example/repository/LogEmailRepository.class
+com/example/GraphQLWithSpringBootApplication.class
+com/example/MailConfiguration.class
+com/example/request/CreateLogEmailRequest.class
+com/example/service/LogEmailService$1.class
+com/example/service/LogEmailService.class
+com/example/mutation/Mutation.class
+com/example/MailSenderService.class
+com/example/response/LogEmailResponse.class
+com/example/entity/LogEmail.class
